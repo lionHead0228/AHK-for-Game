@@ -1,5 +1,7 @@
 #Requires AutoHotkey v2.0
 
+;XButton1 表示鼠标左侧第一个按键
+
 ;气功输出手法首次测试
 ^b::
 {
