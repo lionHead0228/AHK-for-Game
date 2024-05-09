@@ -1,1 +1,30 @@
+#Requires AutoHotkey v2.0
+
+;气功输出手法首次测试
+^b::
+{
+	Loop 
+	{
+		send "{c}"
+		sleep 100
+		send 2
+		sleep 50
+		send "{t}"
+		sleep 500
+		send "{r}"
+		sleep 50
+		send "{f}"
+		sleep 50
+	}
+}
+
+
+;速跑
+^w::
+{
+	send "{w}"
+	send "{w down}"
+}
+
+
 
