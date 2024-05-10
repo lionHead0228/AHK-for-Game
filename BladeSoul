@@ -1,5 +1,22 @@
 #Requires AutoHotkey v2.0
 
+F1::
+;F1是热键，按F1触发下⾯的功能
+{
+	MouseGetPos &MouseX, &MouseY    ; 获取⿏标的横坐标和纵坐标赋值给mouseX和mouseY
+	color := PixelGetColor(MouseX, MouseY, "Slow")    ; 获取横坐标和纵坐标（即mouseX和mouseY）的颜⾊值并赋值给color
+	A_Clipboard := "(" . MouseX . "," . MouseY . ")==" . color    ; 复制（⽅便粘贴数据） mouseX,mouseY==color
+	return  ; 结束
+}
+
+GetColor(x,y)    ;获取指定坐标颜色的函数调⽤
+{
+	CoordMode  "Pixel", "Screen"          ; 全屏识别找坐标⾊
+	color := PixelGetColor(x, y, "Slow")     ; 获取X和Y坐标的颜⾊值 赋值给color
+	return color ;
+}
+
+
 ;XButton1 表示鼠标左侧第一个按键
 
 ;气功输出手法首次测试
