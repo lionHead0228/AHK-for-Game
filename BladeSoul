@@ -18,6 +18,28 @@ GetColor(x,y)    ;获取指定坐标颜色的函数调⽤
 
 
 ;XButton1 表示鼠标左侧第一个按键
+;气功师进阶宏模板
+XButton1::
+{
+	Loop
+	{
+		if GetColor(617,258)=="0xFFFFAA"
+		{
+			send "{c}"
+			sleep 100	
+		}
+		Loop 4
+		{
+			if GetColor(879,91)=="0x3F627F"
+			{
+				send 2
+				sleep 50	
+			}
+			
+		}
+	}
+}
+
 
 ;气功输出手法首次测试
 ^b::
