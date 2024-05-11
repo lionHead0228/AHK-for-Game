@@ -32,10 +32,24 @@ XButton1::
 		{
 			if GetColor(879,91)=="0x3F627F"
 			{
+				send "{t}"
+				sleep 50	
+			}
+			if GetColor(879,91)=="0x3F627F"
+			{
+				send "{r}"
+				sleep 50	
+			}
+			if GetColor(879,91)=="0x3F627F"
+			{
 				send 2
 				sleep 50	
 			}
-			
+			if GetColor(879,91)=="0x3F627F"
+			{
+				send "{f}"
+				sleep 50	
+			}
 		}
 	}
 }
